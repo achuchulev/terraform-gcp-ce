@@ -26,3 +26,15 @@
 &nbsp;
 
 <img src="pictures/sensitive terraform variable.png" />
+
+## How to test
+
+- Go to Terraform Enterprise UI
+- Select workspace `terraform-google-provider`
+- Run `Plan and Apply`
+
+#### You should see and output that contains the following message:
+
+```
+Hello GCP! Google provider is properly configured and authentication is working fine.
+```
