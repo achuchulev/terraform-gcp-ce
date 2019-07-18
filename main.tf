@@ -1,21 +1,5 @@
-resource "google_compute_instance" "default" {
-  name         = "test01"
-  machine_type = "n1-standard-1"
-  zone         = "us-central1-a"
-
-tags = ["test", "instance"]
-
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-9"
-    }
-  }
-
-  network_interface {
-    network = "default"
-
-    access_config {
-      // Ephemeral IP
-    }
+resource "null_resource" "HelloGCP" {
+  provisioner "local-exec" {
+    command = "echo Hello GCP! Google provider is properly configured and authentication is working fine."
   }
 }
