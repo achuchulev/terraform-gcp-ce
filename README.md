@@ -21,6 +21,8 @@
 
 - Create `Terraform-specific service account` on GCP to use to authenticate with Google Cloud Platform (Check documentaion for instrucions on [creating service account](https://cloud.google.com/docs/authentication/getting-started) on GCP)
 - Get the `credential service account` as a json file
-- Add a new `sensitive` variable `credentials` as `terraform variables` in TFE and set its value be the content of your credentials json file.`
+- Add a new `sensitive` variable `credentials` as `terraform variables` in TFE and set its value be the content of your credentials json file
+
 &nbsp;
+
 <img src="pictures/sensitive terraform variable.png" />
