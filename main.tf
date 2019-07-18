@@ -1,7 +1,7 @@
 resource "null_resource" "HelloGCP" {
   
   triggers {
-        build_number = "${timestamp()}"
+    static_trigger = "${timestamp()}"
   }
   
   provisioner "local-exec" {
